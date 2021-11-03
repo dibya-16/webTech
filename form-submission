@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Form Submisiion</title>
+</head>
+<body>
+
+ <?php 
+
+ $firstName=$_POST['firstName'];
+ $lastName=$_POST['lastName'];
+
+ $date=$_POST['dateOfBirth'];
+ $rel=$_POST['religion'];
+ $email=$_POST['Email'];
+ $usename=$_POST['Username'];
+ $password=$_POST['Password'];
+
+
+
+		if ($_SERVER["REQUEST_METHOD"] == 'POST') {
+
+			if (empty($firstNmae)||empty($lastName)||empty($_POST['gender'])||empty($date)||empty($$rel)||empty($email)||empty($username)||empty($password)) {
+				echo "Please fill up the form properly";
+			}
+			else {
+				
+				echo "submitted successfully";
+			}
+		} 
+
+
+	?>
+</body>
+</html>
+
+
+
+
+
+
+	
