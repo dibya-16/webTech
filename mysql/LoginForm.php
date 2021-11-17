@@ -49,7 +49,7 @@
             $password = input($_POST["password"]);
             $result =login($username,$password );
             if($result){
-              header("Location: welcome.php");
+              header("Location: Welcome.php");
             
                 
               
